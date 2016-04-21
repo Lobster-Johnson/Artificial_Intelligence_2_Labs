@@ -10,7 +10,8 @@ Created on Mon Apr 11 20:11:02 2016
 """
 
 import sys
-#import pandas as pd
+import pandas as pandas
+import numpy as numpy
 
 def main():
     
@@ -22,3 +23,17 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+"""Read in data"""
+trainingdata = pandas.read_csv("Data/trainingset.txt",header = None)
+
+"""Learn from data"""
+
+
+"""Read in queries"""
+
+
+"""Answer Queries"""
+
+
+"""Output Queries"""
