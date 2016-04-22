@@ -60,8 +60,39 @@ cat = [2, 3, 4, 7, 8, 9, 11, 16]
 
 
 """Learn from data"""
+    
+##Continuous Relevant Data: age, balance, previous
+##Categorical Relevant Data: job, housing, loan, contact
+##
+##INSERT CODE THAT DOES THINGS HERE
+##Implement Random Forest predictive algorithm
+##Format data into numerical format
+    
+relevantFeatures = ["age","balance","previous","job","housing","loan","contact"]
 
-
+#Convert job to numeric
+def job_to_numeric(x):
+    if x == 'unknown':
+        return 0
+    else:
+        y = x[6:]
+        return int(y)
+#convert housing to numeric
+def houseLoan_to_numeric(x):
+    if x == 'yes':
+        return 0
+    if x == 'no':
+        return 1
+#convert loan to numeric
+#see above
+#convert contact to numeric
+def contact_to_numeric(x):
+    if x == 'unknown':
+        return 0
+    if x == 'telephone':
+        return 1
+    if x == 'cellular':
+        return 2
 
 """Answer Queries"""
 
